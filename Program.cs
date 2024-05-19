@@ -193,3 +193,19 @@ do
     }
 } while (controlNumero4 != true);
 Console.WriteLine(" **** FIN CALCULADORA V2 ****");
+
+//EJERCICIO 4
+string cadenaIngresada1, cadenaIngresada2, cadenaConcatenada;
+Console.WriteLine("Ingrese una cadena de texto: ");
+cadenaIngresada1 = Console.ReadLine();
+
+Console.WriteLine("La longitud de la cadena es: " + cadenaIngresada1.Length);
+Console.WriteLine($"La longitud de la cadena es: {cadenaIngresada1.Length}"); //Otra forma 
+
+Console.WriteLine("Ingrese otra cadena de texto: ");
+cadenaIngresada2 = Console.ReadLine();
+
+cadenaConcatenada = string.Concat(cadenaIngresada1,cadenaIngresada2);
+Console.WriteLine($"La cadena concatenada es: {cadenaConcatenada}");
+Console.WriteLine($"La cadena concatenada es: {string.Concat(cadenaIngresada1,cadenaIngresada2)}");
+Console.WriteLine($"La cadena concatenada es: " + cadenaIngresada1 + cadenaIngresada2); //Otra forma
